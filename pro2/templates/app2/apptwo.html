@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees</title>
+</head>
+<body>
+    <h1>{{dt|date:'SORT_DATE_FORMAT'}}</h1>
+    <h1>{{dt|time:'TIME_FORMAT'}}</h1>
+    {% if nm %}
+    <h3>{{nm}} is python framework</h3>
+    {% endif %}
+    <ul>
+      {% for nm in name %}
+       <li> {{nm}} </li>
+      {% endfor %}
+    </ul>
+</body>
+</html>

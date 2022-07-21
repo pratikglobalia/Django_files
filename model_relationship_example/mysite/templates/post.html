@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+<body>
+    <table>
+        <h2>Post Data</h2>
+        <th>Post Name</th>
+        <th>Post Cat</th>
+        <th>Post PublishDate</th>
+        {% for dt in data %}
+            <tr>
+                <td>{{dt.post_title}}</td>
+                <td>{{dt.post_cat}}</td>
+                <td>{{dt.post_publish_date}}</td>
+            </tr>
+        {% endfor %}
+</body>
+</html>

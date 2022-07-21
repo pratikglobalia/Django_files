@@ -1,0 +1,21 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Profile page</h1>
+    <h2>Welcome {{user}}</h2>
+    <a href="{% url 'logout' %}">Logout</a>
+    <a href="{% url 'changepass' %}">change Password</a>
+    <a href="{% url 'changepass1' %}">change Password 1</a>
+    {% if messages %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {% endif %}
+</body>
+</html> {% endcomment %}
